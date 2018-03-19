@@ -6,7 +6,7 @@
  * Time: 16:20
  */
 
-namespace WonderWp\Framework\Cache;
+namespace WonderWp\Component\Cache;
 
 class TransientCache implements CacheInterface
 {

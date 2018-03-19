@@ -1,6 +1,6 @@
 <?php
 
-namespace WonderWp\Framework\Cache;
+namespace WonderWp\Component\Cache;
 
 interface CacheInterface
 {

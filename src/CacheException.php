@@ -1,5 +1,5 @@
 <?php
-namespace WonderWp\Framework\Cache;
+namespace WonderWp\Component\Cache;
 
 /**
  * Interface used for all types of exceptions thrown by the implementing library.

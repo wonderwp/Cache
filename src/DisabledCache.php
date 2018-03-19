@@ -6,7 +6,7 @@
  * Time: 16:31
  */
 
-namespace WonderWp\Framework\Cache;
+namespace WonderWp\Component\Cache;
 
 class DisabledCache implements CacheInterface
 {
