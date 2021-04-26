@@ -81,7 +81,8 @@ class TransientCache implements CacheInterface
     public function has($key)
     {
         $wpdb = $this->getDb();
-        $res = $wpdb->query($wpdb->prepare('SELECT * FROM `%s` WHERE `option_name` LIKE (\'%s\')',$wpdb->prefix.'options','_transient_'.$key));
+        $statement = $wpdb->prepare("SELECT * FROM $wpdb->options WHERE `option_name` = %s",'_transient_'.$key);
+        $res = $wpdb->query($statement);
         return !empty($res);
     }
 
