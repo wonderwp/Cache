@@ -8,7 +8,7 @@
 
 namespace WonderWp\Component\Cache;
 
-class DisabledCache implements CacheInterface
+class DisabledCache implements CacheGatewayInterface
 {
     /**
      * @inheritDoc

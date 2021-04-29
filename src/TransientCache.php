@@ -8,7 +8,7 @@
 
 namespace WonderWp\Component\Cache;
 
-class TransientCache implements CacheInterface
+class TransientCache implements CacheGatewayInterface
 {
     /** @inheritdoc */
     public function get($key, $default = null)

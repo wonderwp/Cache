@@ -2,7 +2,7 @@
 
 namespace WonderWp\Component\Cache;
 
-interface CacheInterface
+interface CacheGatewayInterface
 {
     /**
      * Fetches a value from the cache.
