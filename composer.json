@@ -22,7 +22,10 @@
     "johnpbloch/wordpress": "^4.7"
   },
   "autoload": {
-    "psr-4": {"WonderWp\\Component\\Cache\\": "src"},
+    "psr-4": {
+      "WonderWp\\Component\\Cache\\": "src",
+      "WonderWp\\Component\\Cache\\Tests\\": "tests"
+    },
     "exclude-from-classmap": [
       "/tests/"
     ]

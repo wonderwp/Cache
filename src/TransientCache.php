@@ -42,13 +42,13 @@ class TransientCache implements CacheInterface
     /** @inheritdoc */
     public function getMultiple($keys, $default = null)
     {
-        $cached = [];
-        if(!empty($keys)){
-            foreach($keys as $transientName){
-                $cached[$transientName] = $this->get($transientName,$default);
+        $values = [];
+        if (!empty($keys)) {
+            foreach ($keys as $key) {
+                $values[$key] = $this->get($key, $default);
             }
         }
-        return $cached;
+        return $values;
     }
 
     /** @inheritdoc */
@@ -69,8 +69,8 @@ class TransientCache implements CacheInterface
     {
         $success = true;
         if(!empty($keys)){
-            foreach($keys as $transientName){
-                $thisSuccess = $this->delete($transientName);
+            foreach($keys as $key){
+                $thisSuccess = $this->delete($key);
                 if(!$thisSuccess){ $success = $thisSuccess; }
             }
         }
